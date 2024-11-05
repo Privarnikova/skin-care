@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+        <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/volb.jpeg" alt="Уход за лицом" width =900px  >
+	<h3>Hair care</h3>
+	<h3 class = "navig">Уход за волосами</h3>
+ </div>
+</center>
+<br>
+<div class="  ">
+<video class="vide0" controls autoplay muted id="videoId" width=600 >
+   <source src="img/vol.mp4" type='video/ogg; codecs="theora, vorbis"'>
+    </video>
+<p class = "ab">
+  Мы поможем подобрать идеальный уход, который подойдет именно вам!
+</p>
+<p class = "ab">
+ Стрессы и плохая экология, вредная еда, окрашивание, частые укладка и завивка (или выпрямление) волос — все это приводит к ухудшению состояния ваших локонов. Чтобы сделать их здоровыми и блестящими, важно запомнить главное: разные волосы требуют разного ухода.
+ Ухаживать за волосами — значит не только правильно их мыть и высушивать. Важно учитывать тип кожи головы, волос и уметь подбирать работающие средства.
+
+ <center><button class="snap"> <a  class ="st" href="#openModal">Узнать свой тип волос и рекомендации по уходу</a> </button></center>
+</p>
+ <div id="openModal" class="modal">
+      <div class="modal1-dialog">
+        <div class="modal1-content">
+           <div class="modal1-header">
+		   <h1 class="modal-title">video</h1>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal1-body">
+		  <center>
+       <video class="vide0" controls autoplay muted id="videoId" width=700 >
+   <source src="img/vol1.mp4" type='video/ogg; codecs="theora, vorbis"'>
+    </video> 
+		 </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
+</div>
+
+
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" " onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('sh')"> Шампуни</button>
+  <button class="btn" onclick="filterSelection('mas')">Маски</button>
+  <button class="btn" onclick="filterSelection('ss')"> Эссенции</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+
+<div class ="filterDiv ss">
+<img class="t1" src="img/ss.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">Deoproce
+Восстанавливающая сыворотка для волос с аргановым маслом
+Silk Recovery  <br>299P</br></p>
+</div>
+
+
+<div class ="filterDiv mas">
+<img class="t3" src="img/mas.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Masil
+Протеиновая маска-филлер для поврежденных волос
+8 Seconds Salon Hair <br>1099P</br></p>
+</div>
+
+<div class ="filterDiv sh">
+<img class="t3" src="img/sh.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Greenini
+Шампунь с кератином и экстрактом алоэ
+Shampoo Aloe&Keratin <br>899</br></p>
+</div>
+<div class ="filterDiv mas">
+<img class="t3" src="img/mas1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Pedison
+Маска для восстановления окрашенных волос
+Aronia Color Protection <br>448</br></p>
+</div>
+
+
+<div class ="filterDiv ss">
+<img class="t1" src="img/ss1.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">LaDor
+Филлер для восстановления волос c лавандой
+Perfect Hair Fill-Up <br>499P</br></p>
+</div>
+
+
+<div class ="filterDiv sh">
+<img class="t3" src="img/sh1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">LSanic
+Увлажняющий протеиновый шампунь с LPP комплексом
+Moisturizing Protein LPP-complex<br>599P</br></p>
+</div>
+
+
+</div>
+</div>
+<script src="scr.js"></script>
+ 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+        <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+  <img class="yx" src="img/yx1.jpeg" alt="Уход за лицом" width =900px  >
+	<h3>Peeling</h3>
+	<h3 class = "navig">Уход за лицом > Очищение > Пилинг</h3>
+ </div>
+</center>
+  <br></br>
+<div class = "tovar">
+<div class = "jp">
+ <a  class ="st" href="#openModal">
+<img src="img/pl1.jpeg" alt="banner" width =300px height = 400px >
+</a>
+ </div>
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+           <div class="modal-header">
+            <h1 class="modal-title">PHOTO</h1>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+		  <center>
+        <img  src="img/pl1.jpeg" alt="banner" width =600px height = 700px >
+		 </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
+<div class = "op">
+<p class = "ab">180 мл<p>
+<h2>Jigott<h2>
+<p class = "naz">Пилинг-скатка с рисовыми отрубями
+Premium Facial Rice Bran Peeling Gel<p>
+<h1 class = "ct">499P</h1>
+<p class = "aaa">Пилинг-скатка, с освежающей гелевой текстурой эффективно очищает кожу от загрязнений, излишков себума и ороговевших клеток, устраняет шелушения и тусклый цвет лица, осветляет и выводит токсины, очищает поры от сальных пробок и черных точек.
+Рисовые отруби, состоящие из мелких частичек, мягко отшелушивают, делая кожу более ровной и гладкой, оказывают смягчающее, увлажняющее и осветляющее действие, восстанавливают яркость и чистоту тона.<p>
+</div>
+</div>
+<br></br>
+<br></br>

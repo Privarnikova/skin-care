@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+        <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/ak4.jpeg" alt="Уход за телом" width =900px  >
+	<h3>Body care</h3>
+	<h3 class = "navig">Уход за телом</h3>
+ </div>
+</center>
+<br>
+<div class="  ">
+<video class="vide0" controls autoplay muted id="videoId" width=600 >
+   <source src="img/yt.mp4" type='video/ogg; codecs="theora, vorbis"'>
+    </video>
+<p class = "ab">
+  Мы поможем подобрать идеальный уход, который подойдет именно вам!
+</p>
+<p class = "ab">
+Коже тела обычно достается меньше внимания, чем лицу. А ведь она также нуждается в заботе: становится сухой и шершавой из-за недостатка сальных желез, требует антивозрастного ухода и защиты от вредных факторов среды. 
+ Основные принципы ухода за телом просты: очищение, удаление лишних клеток рогового слоя, увлажнение и питание.
+
+<center><button class="snap"> <a  class ="st" href="#openModal">Советы по уходу за телом</a> </button></center>
+</p>
+<div id="openModal" class="modal">
+      <div class="modal1-dialog">
+        <div class="modal1-content">
+           <div class="modal1-header">
+		   <h1 class="modal-title">video</h1>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal1-body">
+		  <center>
+      <iframe width="600" height="350" src="https://www.youtube.com/embed/tEahRG1QsGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+ 
+<br></br>
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" " onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('oсh')"> Очищение</button>
+  <button class="btn" onclick="filterSelection('y')"> Уход</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/yt2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Cafe MIMI
+Мерцающий скраб для тела с мангостином и авокадо
+Body scrub shimmer <br>329</br></p>
+</div>
+<div class ="filterDiv y">
+<img class="t4" src="img/yt1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">3W Clinic
+Увлажняющий крем для рук c муцином улитки
+Snail Hand Cream <br>199P</br></p>
+</div>
+<div class ="filterDiv oсh">
+<img class="t3" src="img/yt3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">ALOESmart
+Бурлящий шар для ванны белый со вкусом ванили и апельсина<br>199P</br></p>
+</div>
+<div class ="filterDiv y">
+<img class="t3" src="img/yt4.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Bestofindia
+Натуральное кокосовое масло для волос и тела
+Natural Coconut Oil<br>219</br></p>
+</div>
+<div class ="filterDiv oсh">
+<img class="t3" src="img/yt5.jpg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ecolatier
+Гель для душа с лавандой и кокосом, содержит фруктовые кислоты<br>399</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t4" src="img/yv.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Nilis
+Увлажняющий крем для рук c грепфрутом и аминокислотами
+Gnail Hand Cream <br>199P</br></p>
+</div>
+
+<div class ="filterDiv y">
+<img class="t3" src="img/pit2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Bestofindia
+Натуральное питательное масло для тела
+Natural Coconut Oil<br>359</br></p>
+</div>
+
+<div class ="filterDiv y">
+<img class="t3" src="img/pit.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Frydia
+Питательная сыворотка для кутикулы с экстрактом малины
+Natural Oil<br>319</br></p>
+</div>
+
+<div class ="filterDiv y">
+<img class="t4" src="img/yv1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Select
+Увлажняющий крем для рук c лавандой и маслом жажоба
+Gnail Hand Cream <br>199P</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t3" src="img/pit1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Sun
+Солнцезащитный крем для молодой кожи с экстрактом лилии 50+ SPF
+<br>419</br></p>
+</div>
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/gel.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Terry
+Гель для душа с грейпфрутом и клементином, содержит фруктовые кислоты<br>259</br></p>
+</div>
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/bom.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">ALOESmart
+Бурлящий шар для ванны белый со вкусом лимона и мяты<br>199P</br></p>
+</div>
+
+
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/gel1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ecolatier
+Гель для душа с грейпфрутом и апельсином, содержит фруктовые кислоты<br>375</br></p>
+</div>
+
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/skr.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Cafe MIMI
+Мерцающий скраб для тела с центелой и авокадо
+Body scrub shimmer <br>459</br></p>
+</div>
+</div>
+</div>
+<script src="scr.js"></script>
+ 

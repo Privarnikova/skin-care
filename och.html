@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+        <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/yx1.jpeg" alt="Уход за лицом" width =900px  >
+	<h3>Cleansing</h3>
+	<h3 class = "navig">Уход за лицом > Очищение</h3>
+ </div>
+</center>
+  
+  <p class = "ab">
+ Без очищения все остальные этапы уход бессмысленны, так как забитые поры и осевшие на кожу частички пыли не дадут косметическим средствам работать в полную силу. Очищать кожу необходимо дважды, утром и вечером. Утром важно удалить отмершие клетки и секрет сальных желез, а вечером ― макияж и атмосферные загрязнения. Для жирной и комбинированной кожи лучше выбрать пенящиеся средства, например, гели или пенки. Для сухой и чувствительной кожи подойдут мягкие очищающие лосьоны, или очищающее молочко. 
+ Если вы не знаете как правильно очищать кожу, то нажмите на кнопку.
+ <center><button class="snap"> <a  class ="st" href="#openModal">Показать видео очищения лица</a> </button></center>
+</p>
+<div id="openModal" class="modal">
+      <div class="modal1-dialog">
+        <div class="modal1-content">
+           <div class="modal1-header">
+		   <h1 class="modal-title">video</h1>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal1-body">
+		  <center>
+       <iframe width="600" height="350" src="https://www.youtube.com/embed/tfTekJ70Afw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
+</div>
+<br>
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('g')"> Гидрофильно масло</button>
+  <button class="btn" onclick="filterSelection('py')"> Пенки для умывания</button>
+  <button class="btn" onclick="filterSelection('pl')"> Пилинг</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+<a class = "ccc" href="Deoproce.html">
+<div class ="filterDiv g">
+<img class="t1" src="img/g1.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">Deoproce
+Гидрофильное масло для чувствительной кожи
+Cleansing Oil Total Energy <br>800P</br></p>
+</div>
+</a>
+<a class = "ccc" href="It's Skin.html">
+<div class ="filterDiv py">
+<img class="t3" src="img/p1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">It's Skin
+Пенка, придающая упругость - банан
+Have A Banana Cleansing Foam<br>498P</br></p>
+</div>
+</a>
+<a class = "ccc" href="JON.html">
+<div class ="filterDiv g">
+<img class="t3" src="img/g4.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">JON
+Очищающее гидрофильное масло с экстрактом ласточкиного гнезда
+Bird’s Nest<br>969P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Jigott.html">
+<div class ="filterDiv pl">
+<img class="t4" src="img/pl1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Jigott
+Пилинг-скатка с рисовыми отрубями
+Premium Facial Rice Bran Peeling Gel <br>499P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Ayoume.html">
+<div class ="filterDiv g">
+<img class="t3" src="img/g3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ayoume
+Гидрофильное масло для глубокого очищения пор
+Pore Deep Cleansing Oil<br>1099P</br></p>
+</div>
+</a>
+<div class ="filterDiv py">
+<img class="t3" src="img/p2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Consly
+Восстанавливающая кремовая пенка с муцином улитки
+Snail Regenerating <br>298</br></p>
+</div>
+<div class ="filterDiv pl">
+<img class="t4" src="img/pl2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Scinic
+Увлажняющий пилинг-скатка для сухой кожи
+Face Peelter Aqua Peeling <br>559P</br></p>
+</div>
+<div class ="filterDiv g">
+<img class="t3" src="img/g2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Amill
+Очищающее гидрофильное масло с зерновыми экстрактами
+Super Grain Cleansing Oil<br>1099P</br></p>
+</div>
+<div class ="filterDiv py">
+<img class="t3" src="img/p3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Holika Holika
+Очищающая пенка с рисом
+Daily Garden Rice Soothing Cleansing Foam<br>448</br></p>
+</div>
+</div>
+</div>
+<script src="scr.js"></script>

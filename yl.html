@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+        <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/yx1.jpeg" alt="Уход за лицом" width =900px  >
+	<h3>Facial care</h3>
+	<h3 class = "navig">Уход за лицом</h3>
+ </div>
+</center>
+<br>
+<div class="  ">
+<video class="vide0" controls autoplay muted id="videoId" width=600 >
+   <source src="img/yx1.mp4" type='video/ogg; codecs="theora, vorbis"'>
+    </video>
+<p class = "ab">
+  Мы поможем подобрать идеальный уход, который подойдет именно вам!
+</p>
+<p class = "ab">
+ Для любого типа кожи следует выбирать мягкие очищающие средства, комфортные персонально для вас. Их главная задача — дважды в день удалять загрязнения, не нарушая pH кожи.
+ Недостаток влаги в уходе за кожей приводит к обезвоженности, что провоцирует тусклость, ранние морщины, повышенное образование себума, шелушения и снижение сопротивляемости при ежедневных внешних воздействиях.
+ Если вы не знаете как правильно ухаживать за кожей, то нажмите на кнопку.
+ <center><button class="snap"> <a  class ="st" href="#openModal">Показать схему ухода за кожей</a> </button></center>
+</p>
+ <div id="openModal" class="modal">
+      <div class="modal1-dialog">
+        <div class="modal1-content">
+           <div class="modal1-header">
+		   <h1 class="modal-title">Facial skin care scheme</h1>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal1-body">
+		  <center>
+        <img  src="img/sxema.png" alt="banner" width =800px height = 410px >
+		<audio controls style="width:100%;max-width:600px;">
+    <source src="audio/sxem.mp3" type="audio/mp3">
+    Тег audio не поддерживается вашим браузером.
+</audio>
+		 </center>
+          </div>
+        </div>
+      </div>
+    </div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModal').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModal').style.marginLeft = '0px';
+      });
+    });
+  </script>
+
+</div>
+
+<br></br>
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" " onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('oсh')"> Очищение</button>
+  <button class="btn" onclick="filterSelection('ton')">Тонизирование</button>
+  <button class="btn" onclick="filterSelection('y')"> Основной уход</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+<a class = "ccc" href="Deoproce.html">
+<div class ="filterDiv oсh">
+<img class="t1" src="img/g1.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">Deoproce
+Гидрофильное масло для чувствительной кожи
+Cleansing Oil Total Energy <br>800P</br></p>
+</div>
+</a>
+<a class = "ccc" href="It's Skin.html">
+<div class ="filterDiv oсh">
+<img class="t3" src="img/p1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">It's Skin
+Пенка, придающая упругость - банан
+Have A Banana Cleansing Foam<br>498P</br></p>
+</div>
+</a>
+<a class = "ccc" href="JON.html">
+<div class ="filterDiv oсh">
+<img class="t3" src="img/g4.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">JON
+Очищающее гидрофильное масло с экстрактом ласточкиного гнезда
+Bird’s Nest<br>969P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Jigott.html">
+<div class ="filterDiv oсh">
+<img class="t4" src="img/pl1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Jigott
+Пилинг-скатка с рисовыми отрубями
+Premium Facial Rice Bran Peeling Gel <br>499P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Ayoume.html">
+<div class ="filterDiv oсh">
+<img class="t3" src="img/g3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ayoume
+Гидрофильное масло для глубокого очищения пор
+Pore Deep Cleansing Oil<br>1099P</br></p>
+</div>
+</a>
+
+<a class = "ccc" href="Enough.html">
+<div class ="filterDiv ton">
+<img class="t1" src="img/ton1.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">Enough
+Тонизирующий увлажняющий мист с колагеном
+Collagen Moisture Mist<br>369P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Deop.html">
+<div class ="filterDiv ton">
+<img class="t3" src="img/ton2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Deoproce
+Тонер с экстрактом граната против возрастных изменений
+<br>469P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Cons.html">
+<div class ="filterDiv ton">
+<img class="t3" src="img/ton3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Consly
+Восстанавливающий гель-мист с муцином улитки
+Snail Repairing Gel Mist<br>498P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Frudia.html">
+<div class ="filterDiv ton">
+<img class="t4" src="img/ton4.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Frudia
+Увлажняющий гель-мист с персиком
+My Orchard Peach Real Soothing Gel Mist<br>499P</br></p>
+</div>
+</a>
+<a class = "ccc" href="Pekah.html">
+<div class ="filterDiv ton">
+<img class="t3" src="img/ton5.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Pekah
+Мягкий отшелушивающий тонер с AHA и BHA-кислотами
+Daily Moisture Peeling Toner<br>619P</br></p>
+</div>
+</a>
+<a class = "ccc" href="SecretSkin.html">
+<div class ="filterDiv ton">
+<img class="t3" src="img/ton6.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Secret Skin
+Освежающий тоник с экстрактом гамамелиса
+Witchhazel Poreless Toner<br>659P</br></p>
+</div>
+</a>
+
+<div class ="filterDiv oсh">
+<img class="t3" src="img/p2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Consly
+Восстанавливающая кремовая пенка с муцином улитки
+Snail Regenerating <br>298</br></p>
+</div>
+<div class ="filterDiv oсh">
+<img class="t4" src="img/pl2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Scinic
+Увлажняющий пилинг-скатка для сухой кожи
+Face Peelter Aqua Peeling <br>559P</br></p>
+</div>
+<div class ="filterDiv oсh">
+<img class="t3" src="img/g2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Amill
+Очищающее гидрофильное масло с зерновыми экстрактами
+Super Grain Cleansing Oil<br>1099P</br></p>
+</div>
+<div class ="filterDiv oсh">
+<img class="t3" src="img/p3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Holika Holika
+Очищающая пенка с рисом
+Daily Garden Rice Soothing Cleansing Foam<br>448</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t1" src="img/yvl1.jpeg" alt="banner" width =200px height = 300px> 
+<p class = "kat">Enough
+Успокаивающий лосьон-эмульсия с экстрактом зеленого чая
+RoseHill Green Tea Lotion <br>499P</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t3" src="img/pitl1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">It's Skin
+Питательный крем с коллагеном
+Collagen Nutrition Cream<br>1599P</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t3" src="img/yvl.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Mizon
+Увлажняющий крем с гиалуроновой кислотой Hyaluronic Ultra Suboon Cream<br>699P</br></p>
+</div>
+
+<div class ="filterDiv y">
+<img class="t4" src="img/za.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">FarmStay
+Солнцезащитный крем с гиалуроновой кислотой
+Hyaluronic Sun Cream SPF50+  <br>669P</br></p>
+</div>
+
+
+<div class ="filterDiv y">
+<img class="t3" src="img/pitl.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Frudia
+Питательный крем с гранатом и мятой
+Pomegranate Nutri-Moisturizing Cream<br>1099P</br></p>
+</div>
+
+<div class ="filterDiv y">
+<img class="t3" src="img/za1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Apieu
+Увлажняющий солнцезащитный крем SPF50+/PA+++
+Pure block aqua sun gel <br>899</br></p>
+</div>
+
+
+</div>
+</div>
+<script src="scr.js"></script>
+ 

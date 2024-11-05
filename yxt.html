@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+   <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/ak4.jpeg" alt="Уход за телом" width =900px  >
+	<h3>Care</h3>
+	<h3 class = "navig">Уход за телом > Уход</h3>
+ </div>
+</center>
+  
+<p class = "ab">
+Кожа на 85% состоит из воды: дерма - на 70%, эпидермис -на 15%. Поэтому для ее здоровья просто необходимо увлажнение. Помните, что увлажнять необходимо кожу любого типа, особенно жирную и проблемную. 
+Помимо увлажнения, клеткам кожи необходимы питательные вещества (витамин А, Е, С, В, цинк, медь, антиоксиданты и др.) для поддержания барьерных функций, укрепления липидной мантии, выведения токсинов, восстановления и заживления тканей. 
+<center>
+<a class = "oz" onClick="togglePlay()">Нажмите, чтобы прослушать</a>
+</center>
+ </p>
+<audio id="myAudio" src="audio/yxt.mp3" preload="auto">
+</audio>
+
+<script>
+  var myAudio = document.getElementById("myAudio");
+
+function togglePlay() {
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
+};
+  </script>
+<br>
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('yv')"> Увлажнение</button>
+  <button class="btn" onclick="filterSelection('pit')"> Питание</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+
+<div class ="filterDiv pit">
+<img class="t3" src="img/yt4.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Bestofindia
+Натуральное кокосовое масло для волос и тела
+Natural Coconut Oil<br>219</br></p>
+</div>
+
+
+<div class ="filterDiv yv">
+<img class="t4" src="img/yt1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">3W Clinic
+Увлажняющий крем для рук c муцином улитки
+Snail Hand Cream <br>199P</br></p>
+</div>
+
+
+<div class ="filterDiv yv">
+<img class="t4" src="img/yv.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Nilis
+Увлажняющий крем для рук c грепфрутом и аминокислотами
+Gnail Hand Cream <br>199P</br></p>
+</div>
+
+<div class ="filterDiv pit">
+<img class="t3" src="img/pit2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Bestofindia
+Натуральное питательное масло для тела
+Natural Coconut Oil<br>359</br></p>
+</div>
+
+<div class ="filterDiv pit">
+<img class="t3" src="img/pit.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Frydia
+Питательная сыворотка для кутикулы с экстрактом малины
+Natural Oil<br>319</br></p>
+</div>
+
+<div class ="filterDiv yv">
+<img class="t4" src="img/yv1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Select
+Увлажняющий крем для рук c лавандой и маслом жажоба
+Gnail Hand Cream <br>199P</br></p>
+</div>
+
+
+<div class ="filterDiv pit">
+<img class="t3" src="img/pit1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Sun
+Солнцезащитный крем для молодой кожи с экстрактом лилии 50+ SPF
+<br>419</br></p>
+</div>
+
+</div>
+</div>
+<script src="scr.js"></script>

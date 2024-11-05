@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Care cosmetics</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stovar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav class="one">
+<h1>CARE COSMETICS</h1>
+ <ul class="topmenu">
+    <li><a href="new 1.html">Главная</a></li>
+	  <li><a href="ak.html">Акции</a></li>
+    <li><a href="yl.html">Уход за лицом<i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="och.html">Очищение</a></li>
+        <li><a href="ton.html">Тонизирование</a></li>
+		<li><a href="oy.html">Основной уход</a></li>
+      </ul>
+    </li>
+	 <li><a href="yt.html">Уход за телом<i class="fa fa-angle-down"></i></a>
+	   <ul class="submenu">
+   <li><a href="ocht.html">Очищение</a></li>
+        <li><a href="yxt.html">Уход</a></li>
+      </ul>
+    </li>
+   <li><a href="vol.html">Для волос</a></li>
+   <li><a href="about.html">О нас</a>
+   <li><a href="rev.html">Отзывы</a></li>
+	
+  </ul>
+  </nav>
+<br>
+<center>
+<div class="img_wrap">
+    <img class="yx" src="img/ak4.jpeg" alt="Уход за телом" width =900px  >
+	<h3>Cleansing</h3>
+	<h3 class = "navig">Уход за телом > Очищение</h3>
+ </div>
+</center>
+  
+<p class = "ab">
+Очищение – первый и неотъемлемый этап любой бьюти-рутины. Именно с него начинается путь к здоровью и красоте кожи. Поэтому принимать душ следует дважды в день: утром и вечером. Базовые средства для ухода можно наносить только на предварительно очищенную от загрязнений (кожного сала, пота, остатков косметических средств) кожу для лучшего проникновения активных компонентов в глубокие слои и во избежание аллергической реакции.
+ <center>
+<a class = "oz" onClick="togglePlay()">Нажмите, чтобы прослушать</a>
+</center>
+ </p>
+<audio id="myAudio" src="audio/ocht.mp3" preload="auto">
+</audio>
+
+<script>
+  var myAudio = document.getElementById("myAudio");
+
+function togglePlay() {
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
+};
+  </script>
+<br>
+<center>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+  <button class="btn" onclick="filterSelection('bom')"> Бомбочки</button>
+  <button class="btn" onclick="filterSelection('gel')"> Гели для душа</button>
+   <button class="btn" onclick="filterSelection('skr')"> Скрабы</button>
+</div>
+</center>
+
+<br></br>
+<div class = "prod">
+<div class = "container">
+
+<div class ="filterDiv skr">
+<img class="t3" src="img/yt2.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Cafe MIMI
+Мерцающий скраб для тела с мангостином и авокадо
+Body scrub shimmer <br>329</br></p>
+</div>
+
+
+<div class ="filterDiv bom">
+<img class="t3" src="img/yt3.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">ALOESmart
+Бурлящий шар для ванны белый со вкусом ванили и апельсина<br>199P</br></p>
+</div>
+
+
+<div class ="filterDiv gel">
+<img class="t3" src="img/yt5.jpg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ecolatier
+Гель для душа с лавандой и кокосом, содержит фруктовые кислоты<br>399</br></p>
+</div>
+
+<div class ="filterDiv gel">
+<img class="t3" src="img/gel.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Terry
+Гель для душа с грейпфрутом и клементином, содержит фруктовые кислоты<br>259</br></p>
+</div>
+
+<div class ="filterDiv bom">
+<img class="t3" src="img/bom.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">ALOESmart
+Бурлящий шар для ванны белый со вкусом лимона и мяты<br>199P</br></p>
+</div>
+
+<div class ="filterDiv gel">
+<img class="t3" src="img/gel1.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Ecolatier
+Гель для душа с грейпфрутом и апельсином, содержит фруктовые кислоты<br>375</br></p>
+</div>
+
+
+<div class ="filterDiv skr">
+<img class="t3" src="img/skr.jpeg" alt="banner" width =200px height = 300px>
+<p class = "kat">Cafe MIMI
+Мерцающий скраб для тела с центелой и авокадо
+Body scrub shimmer <br>459</br></p>
+</div>
+
+</div>
+</div>
+<script src="scr.js"></script>
